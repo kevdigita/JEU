@@ -480,7 +480,6 @@ else
      document.getElementById('fig').innerHTML=" TRENBLEMMENT DE TERRE DES  ARBRES QUI TOMBES ";
  }
  
- alert(document.getElementById('fig').innerHTML);
  sup()
  }
     
