@@ -12,10 +12,12 @@
     <title>Document</title>
 </head>
 <body>
+    
 <table id="TD">
 <button class="alerte alert.info" id="btn" class="btn"></button>
     <figcaption class="alert alert-success info" id="fig"> <br> 
-    NEW PARTIE BEGIN  </figcaption>
+    NEW GAME BEGIN  </figcaption>
+
 <?php
 $num=1;
 for($j=1;$j<=10;$j++)
@@ -144,6 +146,19 @@ $num++;
 <?php
 }
 ?>
+<tr>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+
+</tr>
 </table>
 <br>
 

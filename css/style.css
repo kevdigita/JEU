@@ -7,6 +7,26 @@ text-align: center;
 width: 100px;
 height: 100px;
 }
+td.no
+{
+    border: 0px;
+border-color: white;
+border-style: unset;
+text-align: center;
+width: 100px;
+height: 100px;
+}
+button.no
+{
+    border: 0px;
+    border-color: white;
+    border-style: unset;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    }
+
 button
 {
 border: 1px;
@@ -141,7 +161,7 @@ figcaption
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    height: 200px;
+  
     
 }
 th

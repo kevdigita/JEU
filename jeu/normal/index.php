@@ -144,6 +144,19 @@ $num++;
 <?php
 }
 ?>
+<tr>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+
+</tr>
 </table>
 <br>
 

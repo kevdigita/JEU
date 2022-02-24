@@ -3,10 +3,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="../css/bootstrap.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/bootstrap.css">
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
 
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../../css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -15,7 +15,7 @@
 <table id="TD">
 <button class="alerte alert.info" id="btn" class="btn"></button>
     <figcaption class="alert alert-success info" id="fig"> <br> 
-    NEW PARTIE BEGIN  </figcaption>
+    NEW GAME BEGIN  </figcaption>
 <?php
 $num=1;
 for($j=1;$j<=10;$j++)
@@ -144,6 +144,19 @@ $num++;
 <?php
 }
 ?>
+<tr>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+<td class="no"><button class="no"></button></td>
+
+</tr>
 </table>
 <br>
 
