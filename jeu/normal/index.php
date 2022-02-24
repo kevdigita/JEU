@@ -15,7 +15,7 @@
 <table id="TD">
 <button class="alerte alert.info" id="btn" class="btn"></button>
     <figcaption class="alert alert-success info" id="fig"> <br> 
-    NEW PARTIE BEGIN  </figcaption>
+    NEW GAME BEGIN  </figcaption>
 <?php
 $num=1;
 for($j=1;$j<=10;$j++)

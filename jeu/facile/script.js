@@ -4,6 +4,8 @@ mask.style.display='none';
 m='';
 function ordidep()
 {
+    tente=0
+    do{
 nb=0
 t=[]
 for(i=1;i<=100;i++)
@@ -43,42 +45,42 @@ for(i=1;i<=100;i++)
   }
       sup();
       
+      m=id;  if((id==1)||(id==11)||(id==21)||(id==31)||(id==41)||(id==51)||(id==61)||(id==71)||(id==81)||(id==91))
+      {
+      if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
+      {
+             N=[parseInt(id)+1,parseInt(id)-10,parseInt(id)+10]; 
+      }
+      else
+      {
+          N=[parseInt(id)+1,parseInt(id)+10]; 
+      }
+       
       
-   m=id;  if((id==1)||(id==11)||(id==21)||(id==31)||(id==41)||(id==51)||(id==61)||(id==71)||(id==81)||(id==91))
-   {
-   if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
-   {
-          N=[parseInt(id)+1,parseInt(id)-10,parseInt(id)-10,parseInt(id)+10]; 
-   }
-   else
-   {
-       N=[parseInt(id)+1,parseInt(id)+10,parseInt(id)+10]; 
-   }
+      }
+      else if((id==10)||(id==20)||(id==30)||(id==40)||(id==50)||(id==60)||(id==70)||(id==80)||(id==90)||(id==100))
+      { 
+          if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
+      {
+          N=[parseInt(id)-1,parseInt(id)-10,parseInt(id)+10];
+      }
+      else
+      {
+          N=[parseInt(id)-1,parseInt(id)+10];
+      }
+      }
+      else
+      {   if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
+      {
+          N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)-10,parseInt(id)+10];
+      }
+      else
+      {
+          N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)+10];   
+      }
+     }
     
-   
-   }
-   else if((id==10)||(id==20)||(id==30)||(id==40)||(id==50)||(id==60)||(id==70)||(id==80)||(id==90)||(id==100))
-   { 
-       if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
-   {
-       N=[parseInt(id)-1,parseInt(id)-10,parseInt(id)-10,parseInt(id)+10];
-   }
-   else
-   {
-       N=[parseInt(id)-1,parseInt(id)+10,parseInt(id)+10];
-   }
-   }
-   else
-   {   if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
-   {
-       N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)-10,parseInt(id)-10,parseInt(id)+10];
-   }
-   else
-   {
-       N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)+10,parseInt(id)+10];   
-   }
-  }
- 
+  
   col=(document.getElementById(id).getAttribute('class'))
   
    for(i=0;i<N.length;i++)
@@ -150,17 +152,18 @@ for(i=1;i<=100;i++)
   }
         }
   }
+
   nb=0;
   tb=[]
 for(i=1;i<=100;i++)
 {
-    if(document.getElementById(i).getAttribute('class')=='blanc'||
-    document.getElementById(i).getAttribute('class')=='jaune'||
-    document.getElementById(i).getAttribute('class')=='rock-mini'||
-    document.getElementById(i).getAttribute('class')=='mer-mini'||
-    document.getElementById(i).getAttribute('class')=='feu-mini'
-    ||
-    document.getElementById(i).getAttribute('class')=='abr-mini'
+    if(
+        (document.getElementById(i).getAttribute('class')=='blanc')||
+    (document.getElementById(i).getAttribute('class')=='jaune')||
+    (document.getElementById(i).getAttribute('class')=='rock-mini')||
+   ( document.getElementById(i).getAttribute('class')=='mer-mini')||
+    (document.getElementById(i).getAttribute('class')=='feu-mini')||
+    (document.getElementById(i).getAttribute('class')=='abr-mini')
     )
 
     {
@@ -170,6 +173,35 @@ for(i=1;i<=100;i++)
 
 }
 id= tb[Math.floor(Math.random() * tb.length)];
+tente++;
+
+}while((id===undefined )&& (tente<=100));
+if(tente>=100)
+{for(i=1;i<=100;i++)
+    {
+        if(
+            (document.getElementById(i).getAttribute('class')=='blanc')||
+        (document.getElementById(i).getAttribute('class')=='jaune')||
+        (document.getElementById(i).getAttribute('class')=='rock-mini')||
+       ( document.getElementById(i).getAttribute('class')=='mer-mini')||
+        (document.getElementById(i).getAttribute('class')=='feu-mini')||
+        (document.getElementById(i).getAttribute('class')=='abr-mini')
+        )
+    
+        {
+            tb[nb]=i;
+            nb++;
+        }
+    
+    }
+    id= tb[Math.floor(Math.random() * tb.length)];
+
+}
+
+
+
+
+
 
 if(document.getElementById(id).getAttribute('class')=='blanc')
 { 
@@ -314,7 +346,7 @@ else
     
     
  m=id;
- if((id==1)||(id==11)||(id==21)||(id==31)||(id==41)||(id==51)||(id==61)||(id==71)||(id==81)||(id==91))
+if((id==1)||(id==11)||(id==21)||(id==31)||(id==41)||(id==51)||(id==61)||(id==71)||(id==81)||(id==91))
 {
 if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
 {

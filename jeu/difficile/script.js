@@ -46,15 +46,15 @@ for(i=1;i<=100;i++)
       sup();
       
       
-   m=id;if((id==1)||(id==11)||(id==21)||(id==31)||(id==41)||(id==51)||(id==61)||(id==71)||(id==81)||(id==91))
+   m=id;  if((id==1)||(id==11)||(id==21)||(id==31)||(id==41)||(id==51)||(id==61)||(id==71)||(id==81)||(id==91))
    {
    if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
    {
-          N=[parseInt(id)+1,parseInt(id)-10,parseInt(id)-10,parseInt(id)+10]; 
+          N=[parseInt(id)+1,parseInt(id)-10,parseInt(id)+10]; 
    }
    else
    {
-       N=[parseInt(id)+1,parseInt(id)+10,parseInt(id)+10]; 
+       N=[parseInt(id)+1,parseInt(id)+10]; 
    }
     
    
@@ -63,23 +63,24 @@ for(i=1;i<=100;i++)
    { 
        if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
    {
-       N=[parseInt(id)-1,parseInt(id)-10,parseInt(id)-10,parseInt(id)+10];
+       N=[parseInt(id)-1,parseInt(id)-10,parseInt(id)+10];
    }
    else
    {
-       N=[parseInt(id)-1,parseInt(id)+10,parseInt(id)+10];
+       N=[parseInt(id)-1,parseInt(id)+10];
    }
    }
    else
    {   if(document.getElementById('bt'+id).getAttribute('deplacer')=='d')
    {
-       N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)-10,parseInt(id)-10,parseInt(id)+10];
+       N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)-10,parseInt(id)+10];
    }
    else
    {
-       N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)+10,parseInt(id)+10];   
+       N=[parseInt(id)-1,parseInt(id)+1,parseInt(id)+10];   
    }
   }
+ 
   col=(document.getElementById(id).getAttribute('class'))
   
    for(i=0;i<N.length;i++)
